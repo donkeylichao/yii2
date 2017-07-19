@@ -95,4 +95,15 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+    /**
+     * @return string
+     */
+    public function actionSay()
+    {
+        $haha = 'asdf';
+        return $this->render("say", [
+            'haha' => $haha,
+        ]);
+    }
 }
